@@ -1,0 +1,14 @@
+[
+{ 
+        "caption": "PhpFormat", 
+	"id": "php-format", 
+	"children":
+	[
+	{
+	"caption": "Formt selection",
+	"command": "php_format"
+	}
+	]
+}
+]
+
