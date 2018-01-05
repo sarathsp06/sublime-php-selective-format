@@ -43,7 +43,7 @@ class PhpFormatCommand(sublime_plugin.TextCommand):
     def update_selection(self, code, edit):
         region = self.selection()
         self.view.erase(edit, region)
-        print(self.view.insert(edit, region.a, code))
+        self.view.insert(edit, region.begin(), code)
 
     def psr2(self, code):
         indentation = self.get_indentation(code)
